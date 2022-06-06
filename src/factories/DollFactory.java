@@ -21,22 +21,5 @@ public class DollFactory extends AbstractFactory<Doll>{
 
 
 
-   /* @Override
-    public Bike getBike(String bikeColor) {
-        //doll factory cannot return bike
-        return null;
-    }
 
-    @Override
-    public Doll getDoll(String dollGender) {
-        if(dollGender.equals("MALE")){
-            return new Doll("male");
-        }
-        else if(dollGender.equals("FEMALE")){
-            return new Doll("female");
-        }
-        else{
-            return new Doll("unknown");
-        }
-    }*/
 }

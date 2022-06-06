@@ -1,4 +1,5 @@
 import command.INeedBike;
+import command.INeedDoll;
 import entities.Board;
 import entities.Dwarf;
 import entities.Santa;
@@ -16,6 +17,8 @@ public class Workshop {
     public static void main(String[] args) {
         Workshop workshop = new Workshop();
         Santa.getInstance().sayWords(new INeedBike(workshop.board));
+        Santa.getInstance().sayWords(new INeedDoll(workshop.board));
+        Santa.getInstance().sayWords(new INeedDoll(workshop.board));
 
         Santa.getInstance().seeToys();
     }

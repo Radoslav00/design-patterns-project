@@ -29,6 +29,7 @@ public class Santa {
     }
 
     public void seeToys(){
+        System.out.println("There are " + this.toyList.size() + " toys in Santa's bag");
         for (Toy toy:this.toyList) {
             System.out.println(toy.toString());
         }
