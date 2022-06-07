@@ -16,13 +16,13 @@ public class Workshop {
 
     public static void main(String[] args) {
         Workshop workshop = new Workshop();
-        Santa connection = Santa.getInstance();
+        Santa santa = Santa.getInstance();
 
 
-        connection.sayWords(new INeedBike(workshop.board));
-        connection.sayWords(new INeedDoll(workshop.board));
-        connection.sayWords(new INeedDoll(workshop.board));
+        santa.sayWords(new INeedBike(workshop.board));
+        santa.sayWords(new INeedDoll(workshop.board));
+        santa.sayWords(new INeedDoll(workshop.board));
 
-        Santa.getInstance().seeToys();
+        santa.seeToys();
     }
 }
