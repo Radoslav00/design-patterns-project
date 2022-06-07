@@ -3,11 +3,14 @@ package factories;
 import entities.Bike;
 import entities.Doll;
 
-public class DollFactory extends AbstractFactory<Doll>{
+public class DollFactory extends AbstractFactory<Doll> {
     private static DollFactory instance;
 
-    public static DollFactory getInstance(){
-        if(instance == null){
+    private DollFactory() {}
+
+
+    public static DollFactory getInstance() {
+        if (instance == null) {
             instance = new DollFactory();
         }
         return instance;
@@ -17,9 +20,6 @@ public class DollFactory extends AbstractFactory<Doll>{
     public Doll getToy(String[] args) {
         return new Doll(args[0]);
     }
-
-
-
 
 
 }

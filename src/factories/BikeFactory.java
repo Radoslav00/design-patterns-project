@@ -7,8 +7,10 @@ import factories.AbstractFactory;
 public class BikeFactory extends AbstractFactory<Bike> {
     private static BikeFactory instance;
 
-    public static BikeFactory getInstance(){
-        if(instance == null){
+    private BikeFactory() {}
+
+    public static BikeFactory getInstance() {
+        if (instance == null) {
             instance = new BikeFactory();
         }
         return instance;

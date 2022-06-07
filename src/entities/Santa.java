@@ -9,7 +9,7 @@ public class Santa {
     private static Santa instance;
     private List<Toy> toyList;
 
-    public Santa(){
+    private Santa(){
         this.toyList = new ArrayList<>();
     }
 
