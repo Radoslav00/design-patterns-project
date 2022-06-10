@@ -20,6 +20,7 @@ public class Santa {
         return instance;
     }
 
+
     public void sayWords(Command command) {
         command.execute();
     }

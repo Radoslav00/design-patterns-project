@@ -1,7 +1,7 @@
 import command.INeedBike;
 import command.INeedDoll;
 import entities.Board;
-import entities.Dwarf;
+import entities.Elves;
 import entities.Santa;
 
 public class Workshop {
@@ -9,9 +9,9 @@ public class Workshop {
 
     public Workshop() {
         this.board = new Board();
-        Dwarf dwarf1 = new Dwarf("djudje1");
+        Elves elve1 = new Elves("elf1");
 
-        board.subscribe(dwarf1);
+        board.subscribe(elve1);
     }
 
     public static void main(String[] args) {

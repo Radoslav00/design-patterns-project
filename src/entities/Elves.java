@@ -5,11 +5,11 @@ import factories.DollFactory;
 import observer.Observable;
 import observer.Observer;
 
-public class Dwarf implements Observer {
+public class Elves implements Observer {
     public String name;
     private Observable board;
 
-    public Dwarf(String name) {
+    public Elves(String name) {
         this.name = name;
     }
 
